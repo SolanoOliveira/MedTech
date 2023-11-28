@@ -1,0 +1,261 @@
+/* Catalogo.css */
+.catalogo-container {
+    overflow-x: auto;
+    white-space: nowrap;
+    padding: 20px;
+    background-color: #f8f9fa;
+    display: flex;
+    align-items: center;
+    overflow-x: hidden;
+  }
+  
+  .catalogo-container::-webkit-scrollbar {
+    height: 12px;
+  }
+  
+  .catalogo-container::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 10px;
+  }
+  
+  .catalogo-container::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  .course-card {
+    flex: 0 0 auto; /* This prevents cards from stretching and allows them to be scrolled */
+    margin-right: 20px; /* Spacing between cards */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .course-card:hover {
+    transform: translateY(-5px); /* Slightly raise the card on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .course-card:last-child {
+    margin-right: 0; /* Remove margin for the last card */
+  }
+  
+  .card-img-top {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+  }
+  
+  .card-body {
+    padding: 15px;
+  }
+  
+  .card-title {
+    margin-bottom: 15px;
+    font-size: 1.25rem;
+  }
+  
+  .card-text {
+    font-size: 1rem;
+    color: #6c757d;
+  }
+  
+  /* Catalogo.css */
+.catalogo-container {
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+    white-space: nowrap;
+    scroll-behavior: smooth; /* Smooth scrolling */
+    display: flex;
+  }
+  
+  /* Remove side paddings for container-fluid */
+  .container-fluid {
+    padding-right: 0;
+    padding-left: 0;
+  }
+  
+  /* Style for CourseCard */
+  .course-card {
+    display: inline-block;
+    margin-right: 15px;
+    width: 18rem; /* Adjust the width as needed */
+  }
+  
+  .course-card img {
+    width: 100%;
+    height: auto;
+  }
+  
+  /* Add more styles if necessary */
+
+  .catalogo-controls {
+    display: flex;
+    align-items: center;
+  }
+  
+  .catalogo-controls button {
+    font-size: 24px;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+  }
+
+  .heading-cursos {
+    text-align: left;
+    margin-left: 15px; /* Adjust this value as needed */
+  }
+
+  .button-27 {
+    appearance: none;
+    background-color: #121212;
+    border: 2px solid #121212;
+    border-radius: 10px; /* Slightly rounded corners */
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Roobert, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 16px;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0;
+    outline: none;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: 30px; /* Width of the button */
+    height: 350px; /* Adjusted height to match the carousel */
+    will-change: transform;
+  }
+  
+  .button-27:disabled {
+    pointer-events: none;
+  }
+  
+  .button-27:hover {
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+  }
+  
+  .button-27:active {
+    box-shadow: none;
+    transform: translateY(0);
+  }
+
+  /* ... existing styles ... */
+
+.category-card {
+    display: inline-block;
+    width: 200px; /* Adjust as needed */
+    height: 150px; /* Adjust as needed */
+    margin-right: 15px;
+    border-radius: 10px; /* Slightly rounded corners */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .category-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .category-name {
+    padding: 20px;
+    color: white; /* Adjust color as needed */
+    font-size: 1.2em;
+    text-align: center;
+  }
+  
+  /* ... other styles ... */
+
+  .button-category {
+    /* Adjust dimensions as needed to match the category card size */
+    height: 200px; /* Example height, adjust based on your category card size */
+    width: 30px;  /* Example width, adjust as needed */
+    /* Other properties can remain the same as .button-27, or you can customize further */
+  }
+
+  /* Catalogo.css */
+/* ... existing styles ... */
+
+/* Catalogo.css */
+/* ... existing styles ... */
+
+/* Catalogo.css */
+/* ... existing styles ... */
+
+.progress-course-card {
+    display: flex;
+    align-items: center;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    padding: 15px;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    cursor: pointer;
+    width: 100%; /* Ensure full width */
+  }
+  
+  .progress-course-card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+  }
+  
+  .progress-course-image {
+    width: 150px; /* Increased image size */
+    height: 100px; /* Adjust height accordingly */
+    object-fit: cover;
+    margin-right: 20px;
+  }
+  
+  .progress-course-info {
+    flex-grow: 1;
+  }
+  
+  .progress-course-info h3 {
+    margin: 0 0 10px 0;
+    color: #333;
+  }
+  
+  /* Progress Bar Styles */
+  .progress-bar-background {
+    width: 100%;
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    margin-top: 10px;
+  }
+  
+  .progress-bar-fill {
+    height: 10px;
+    background-color: #4caf50;
+    border-radius: 5px;
+    width: var(--progress); /* Controlled by a variable */
+  }
+  
+  /* ... other styles ... */
+  
+  
+  ::-webkit-scrollbar {
+    width: 6px; /* Largura da barra de rolagem mais fina */
+}
+
+/* Estilizando a trilha da barra de rolagem */
+::-webkit-scrollbar-track {
+    background: #ccc; /* Cor da trilha (cinza mais escuro) */
+}
+
+/* Estilizando a alça (thumb) da barra de rolagem */
+::-webkit-scrollbar-thumb {
+    background: #4d5057; /* Cor da alça */
+    border-radius: 12px; /* Deixa a alça redondinha */
+}
+
+/* Estilizando a alça (thumb) da barra de rolagem quando hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #1e1f1e; /* Cor da alça quando hover (opcional) */
+}

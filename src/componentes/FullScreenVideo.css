@@ -1,0 +1,54 @@
+.video-container {
+    position: relative;
+    flex-grow: 1;
+    overflow: hidden;
+  }
+  
+  .video-container::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(90deg, rgba(42,245,152,1) 0%, rgba(34,228,172,1) 20%, rgba(20,201,187,1) 40%, rgba(15,190,216,1) 60%, rgba(20,201,203,1) 80%, rgba(27,183,189,1) 100%);
+    opacity: 0.3; /* Ajuste a opacidade conforme necessário */
+    z-index: 2;
+  }
+  
+  .video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .video-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1; /* Mantém o vídeo atrás de outros conteúdos */
+  }
+  
+  .video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .video-container {
+    flex-grow: 1;
+    overflow: hidden;
+  }
+  
+  .video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  
