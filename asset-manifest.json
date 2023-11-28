@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/%7BMedTech%7D/static/css/main.f671797d.css",
+    "main.js": "/%7BMedTech%7D/static/js/main.de6f042a.js",
+    "static/js/787.3e72c572.chunk.js": "/%7BMedTech%7D/static/js/787.3e72c572.chunk.js",
+    "static/media/video_sangue.mp4": "/%7BMedTech%7D/static/media/video_sangue.874c3e6b9d7f572caaa4.mp4",
+    "static/media/logo_MedTech.png": "/%7BMedTech%7D/static/media/logo_MedTech.54ee1af88bafc6744fa2.png",
+    "index.html": "/%7BMedTech%7D/index.html",
+    "main.f671797d.css.map": "/%7BMedTech%7D/static/css/main.f671797d.css.map",
+    "main.de6f042a.js.map": "/%7BMedTech%7D/static/js/main.de6f042a.js.map",
+    "787.3e72c572.chunk.js.map": "/%7BMedTech%7D/static/js/787.3e72c572.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f671797d.css",
+    "static/js/main.de6f042a.js"
+  ]
+}
