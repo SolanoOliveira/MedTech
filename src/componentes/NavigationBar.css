@@ -1,27 +1,38 @@
 .navbar-brand {
-    font-weight: bold;
-    font-size: 1.5rem;
-  }
-  
-  .navbar {
-    box-shadow: 0 4px 8px rgba(0,0,0,.2); /* A sombra foi intensificada e espalhada mais amplamente */
-  }
+  font-weight: bold;
+  font-size: 1.5rem;
+}
 
-  .navbar-logo {
-    height: 100px; /* ou você pode usar width se quiser controlar o tamanho pela largura */
-  }  
-  
+.navbar {
+  box-shadow: 0 4px 8px rgba(0,0,0,.2); /* A sombra foi intensificada e espalhada mais amplamente */
+  background-color: #227c9d; /* Ajuste a cor de fundo conforme necessário */
+}
+
+.navbar-logo {
+  height: 100px; /* ou você pode usar width se quiser controlar o tamanho pela largura */
+}  
+
+.nav-link {
+  margin-right: 1rem;
+  transition: color .3s ease;
+  font-size: 1.15rem; /* Aumente o tamanho da fonte conforme necessário */
+  font-family: 'Arial', sans-serif; /* Escolha uma fonte que você goste */
+  color: #ffffff; /* Cor do texto dos links */
+}
+
+.nav-link:last-child {
+  margin-right: 0;
+}
+
+.nav-link:hover, .nav-link.active {
+  color: #ffd700; /* Cor do texto dos links ao passar o mouse ou ativo */
+}
+
+/* Estilos para dispositivos móveis */
+@media (max-width: 992px) {
   .nav-link {
-    margin-right: 1rem;
-    transition: color .3s ease;
-    font-size: 1.15rem; /* Aumente o tamanho da fonte conforme necessário */
+      margin-right: 0;
+      margin-bottom: 0.5rem;
+      font-size: 1rem;
   }
-  
-  .nav-link:last-child {
-    margin-right: 0;
-  }
-  
-  .nav-link:hover {
-    color: #0056b3;
-  }
-  
+}

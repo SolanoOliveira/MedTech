@@ -1,0 +1,147 @@
+/* Estilo para a seção principal */
+.home-container {
+    height: 100vh; /* Alterado para "height: 100vh;" para ocupar a página inteira verticalmente */
+}
+
+.main-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 100%; Remova esta linha */
+}
+
+.titulo-principal {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-size: 3rem;
+    color: #17c3b2;
+}
+
+.main-content p {
+    font-family: 'Hind Siliguri', sans-serif;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.texto-titulo {
+    font-family: 'Hind Siliguri', sans-serif;
+}
+
+.image-container {
+    animation: float 3s ease-in-out infinite;
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+    background: transparent;
+    border-radius: 15px;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.fade-in {
+    opacity: 1;
+}
+
+.fade-out {
+    opacity: 0;
+}
+
+/* Estilo para dispositivos móveis */
+@media (max-width: 768px) {
+    .row.align-items-center {
+        flex-direction: column-reverse;
+    }
+
+    .col-md-6 {
+        margin-top: 20px;
+    }
+
+    .col-12.order-sm-12.text-center.text-md-left {
+        text-align: center;
+    }
+}
+
+/* Estilo para a nova seção */
+.nova-secao {
+    background-color: #227c9d;
+    padding: 2px 10px; /* Diminua o padding para diminuir o tamanho da seção */
+}
+
+/* Estilo para os ícones na nova seção */
+.nova-secao .icones-container {
+    display: flex;
+    justify-content: space-around; /* Alterado para espaçamento entre os ícones */
+    align-items: center;
+    margin-top: 20px; /* Reduza a margem superior para diminuir o espaço entre a seção anterior e esta */
+    background: transparent;
+}
+
+/* Espaçamento entre os ícones */
+.nova-secao .icone {
+    margin: 100px 100px; /* Ajuste a margem horizontal para dar espaço entre os ícones */
+}
+
+/* Estilo para os ícones */
+.nova-secao .icone img {
+    max-width: 200px; /* Aumente o tamanho máximo das imagens dos ícones */
+    height: auto;
+    transition: transform 0.3s ease-in-out; /* Adicione uma transição de transformação */
+}
+
+/* Efeito de hover nos ícones */
+.nova-secao .icone:hover img {
+    transform: scale(1.1); /* Aumenta o tamanho do ícone em 10% no hover */
+}
+
+/* Estilo para o texto dos ícones */
+.nova-secao .icone-texto {
+    font-family: 'Hind Siliguri', sans-serif;
+    font-size: 1.2rem; /* Ajuste o tamanho da fonte do texto dos ícones */
+    font-weight: 300;
+    color: white;
+}
+
+.secao-titulo{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 2rem;
+    color: white;;
+}
+
+
+/* Estilo para dispositivos móveis */
+@media (max-width: 768px) {
+    /* Aumente o padding inferior para a primeira seção na visualização de celular */
+    .main-content {
+        padding-bottom: 40px;
+    }
+
+    /* Defina o texto do título na primeira seção para centralizado */
+    .titulo-principal {
+        text-align: center;
+    }
+
+    /* Alinhe o botão no centro da primeira seção */
+    .text-center.text-md-left {
+        text-align: center !important; /* !important para anular estilos anteriores */
+    }
+
+    /* Redefina a margem superior para a segunda seção para reduzir o espaço entre as seções */
+    .nova-secao {
+        margin-top: 0;
+    }
+
+    /* Faça os ícones na segunda seção aparecerem verticalmente */
+    .icones-container {
+        flex-direction: column; /* Alinhe os ícones verticalmente */
+        align-items: center; /* Centralize os ícones horizontalmente */
+    }
+
+    /* Redefina a margem entre os ícones na segunda seção para dar espaço uniformemente */
+    .icone {
+        margin: 20px 0; /* Ajuste a margem vertical para espaçamento uniforme */
+    }
+}
