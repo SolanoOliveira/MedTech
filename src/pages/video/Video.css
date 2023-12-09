@@ -1,0 +1,115 @@
+.video-page-wrapper {
+    background-color: #f9f9f9;
+    min-height: 100vh;
+  }
+  
+  .video-page-layout {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .main-video-section {
+    flex: 3;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    max-width: calc(100% - 240px);
+  }
+  
+  .main-video {
+    width: 100%;
+    height: auto;
+    max-height: 500px;
+    border-radius: 8px;
+  }
+  
+  .video-description {
+    font-size: 1em;
+    color: #333;
+  }
+  
+  .video-list {
+    flex: 1;
+    overflow-y: auto;
+    max-height: 600px;
+    padding: 10px;
+  }
+  
+  .video-thumbnail {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    cursor: pointer;
+    margin-bottom: 10px;
+    padding: 10px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .video-thumbnail:hover {
+    background-color: #f8f8f8;
+  }
+  
+  h3, h4 {
+    margin: 5px 0;
+  }
+  
+  p {
+    margin: 0;
+    font-size: 1em;
+    color: #333;
+  }
+  
+  .video-metadata {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 8px 0;
+  }
+  
+  .video-ratings {
+    display: flex;
+    align-items: center;
+  }
+  
+  .video-rating {
+    margin-right: 5px;
+  }
+  
+  .filled-star {
+    color: gold;
+  }
+  
+  .empty-star {
+    color: #ccc;
+  }
+  
+  .video-progress progress {
+    margin-right: 10px;
+    width: 100px; /* Or your preferred width */
+  }
+  
+  .video-progress span {
+    font-size: 0.8em;
+    color: #666;
+  }
+  
+
+  /* Estilos existentes... */
+
+/* Estilos para dispositivos móveis */
+@media (max-width: 768px) {
+    .video-page-layout {
+      flex-direction: column;
+    }
+  
+    .main-video-section {
+      max-width: 100%; /* Remove a restrição de largura para dispositivos móveis */
+    }
+  
+    .video-list {
+      max-height: none; /* Remove a altura máxima para permitir que a lista se expanda conforme necessário */
+      overflow-y: visible; /* Remove a barra de rolagem */
+    }
+  }
+  

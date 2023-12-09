@@ -6,6 +6,7 @@ import './Catalogo.css'; // Ensure you have this CSS file in your project
 import NavigationBar from '../../componentes/NavigationBar';
 import CategoryCard from '../../componentes/CategoryCard';
 import ProgressCourseCard from '../../componentes/ProgressCourseCard';
+import { useNavigate } from 'react-router-dom';
 
 const Catalogo = () => {
   const courses = [
@@ -72,6 +73,12 @@ const Catalogo = () => {
     }
   };
 
+  const navigate = useNavigate();
+  const goToVideoPage = () => {
+    navigate('/Video');
+  };
+
+
   return (
     <div>
       <AnimatedCursor
@@ -106,7 +113,7 @@ const Catalogo = () => {
           <button className="button-27" onClick={() => scroll(-200)}>&lt;</button>
           <div className="catalogo-container" ref={scrollContainer}>
             {courses.map((course, index) => (
-              <CourseCard key={index} {...course} />
+              <CourseCard key={index} {...course} onClick={goToVideoPage} />
             ))}
           </div>
           <button  className="button-27"  onClick={() => scroll(200)}>&gt;</button>
