@@ -1,20 +1,21 @@
 {
   "files": {
-    "main.css": "/MedTech/home/static/css/main.cbd372b4.css",
-    "main.js": "/MedTech/home/static/js/main.a6af7056.js",
-    "static/js/787.3e72c572.chunk.js": "/MedTech/home/static/js/787.3e72c572.chunk.js",
-    "static/media/video_sangue.mp4": "/MedTech/home/static/media/video_sangue.874c3e6b9d7f572caaa4.mp4",
-    "static/media/logo_MedTech.png": "/MedTech/home/static/media/logo_MedTech.54ee1af88bafc6744fa2.png",
-    "static/media/medico3.png": "/MedTech/home/static/media/medico3.61108863301b9a51df31.png",
-    "static/media/medico2.png": "/MedTech/home/static/media/medico2.60edbda66baad018b213.png",
-    "static/media/medico1.png": "/MedTech/home/static/media/medico1.d65614a8bcfc0f68b2d4.png",
-    "index.html": "/MedTech/home/index.html",
-    "main.cbd372b4.css.map": "/MedTech/home/static/css/main.cbd372b4.css.map",
-    "main.a6af7056.js.map": "/MedTech/home/static/js/main.a6af7056.js.map",
-    "787.3e72c572.chunk.js.map": "/MedTech/home/static/js/787.3e72c572.chunk.js.map"
+    "main.css": "/MedTech/static/css/main.74125cf5.css",
+    "main.js": "/MedTech/static/js/main.c211fae2.js",
+    "static/js/787.3e72c572.chunk.js": "/MedTech/static/js/787.3e72c572.chunk.js",
+    "static/media/pneumo.mp4": "/MedTech/static/media/pneumo.20c2fb7b717ed6da0c8c.mp4",
+    "static/media/video_sangue.mp4": "/MedTech/static/media/video_sangue.874c3e6b9d7f572caaa4.mp4",
+    "static/media/logo_MedTech.png": "/MedTech/static/media/logo_MedTech.54ee1af88bafc6744fa2.png",
+    "static/media/medico3.png": "/MedTech/static/media/medico3.61108863301b9a51df31.png",
+    "static/media/medico2.png": "/MedTech/static/media/medico2.60edbda66baad018b213.png",
+    "static/media/medico1.png": "/MedTech/static/media/medico1.d65614a8bcfc0f68b2d4.png",
+    "index.html": "/MedTech/index.html",
+    "main.74125cf5.css.map": "/MedTech/static/css/main.74125cf5.css.map",
+    "main.c211fae2.js.map": "/MedTech/static/js/main.c211fae2.js.map",
+    "787.3e72c572.chunk.js.map": "/MedTech/static/js/787.3e72c572.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.cbd372b4.css",
-    "static/js/main.a6af7056.js"
+    "static/css/main.74125cf5.css",
+    "static/js/main.c211fae2.js"
   ]
 }
