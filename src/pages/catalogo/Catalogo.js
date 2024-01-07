@@ -10,28 +10,34 @@ import { useNavigate } from 'react-router-dom';
 
 const Catalogo = () => {
   const courses = [
-    { title: 'Pediatric Fundamentals', description: 'Dive into pediatric care', imageUrl: 'https://static.vecteezy.com/ti/fotos-gratis/p2/21486152-inteligente-medico-pequeno-menina-foto.jpg' },
-    { title: 'Clinical Nutrition', description: 'Dive into pediatric care', imageUrl: 'https://static.vecteezy.com/ti/fotos-gratis/p2/21486152-inteligente-medico-pequeno-menina-foto.jpg' },
-    { title: 'Advanced Cardiology', description: 'Dive into pediatric care', imageUrl: 'https://static.vecteezy.com/ti/fotos-gratis/p2/21486152-inteligente-medico-pequeno-menina-foto.jpg' },
-    { title: 'Medical Technology', description: 'Dive into pediatric care', imageUrl: 'https://static.vecteezy.com/ti/fotos-gratis/p2/21486152-inteligente-medico-pequeno-menina-foto.jpg' },
-    { title: 'Medical Technology', description: 'Dive into pediatric care', imageUrl: 'https://static.vecteezy.com/ti/fotos-gratis/p2/21486152-inteligente-medico-pequeno-menina-foto.jpg' },
-    { title: 'Medical Technology', description: 'Dive into pediatric care', imageUrl: 'https://static.vecteezy.com/ti/fotos-gratis/p2/21486152-inteligente-medico-pequeno-menina-foto.jpg' },
-    { title: 'Medical Technology', description: 'Dive into pediatric care', imageUrl: 'https://static.vecteezy.com/ti/fotos-gratis/p2/21486152-inteligente-medico-pequeno-menina-foto.jpg' },
-    { title: 'Medical Technology', description: 'Dive into pediatric care', imageUrl: 'https://static.vecteezy.com/ti/fotos-gratis/p2/21486152-inteligente-medico-pequeno-menina-foto.jpg' },
-    { title: 'Medical Technology', description: 'Dive into pediatric care', imageUrl: 'https://static.vecteezy.com/ti/fotos-gratis/p2/21486152-inteligente-medico-pequeno-menina-foto.jpg' },
-    { title: 'Medical Technology', description: 'Dive into pediatric care', imageUrl: 'https://static.vecteezy.com/ti/fotos-gratis/p2/21486152-inteligente-medico-pequeno-menina-foto.jpg' },
-    { title: 'Medical Technology', description: 'Dive into pediatric care', imageUrl: 'https://static.vecteezy.com/ti/fotos-gratis/p2/21486152-inteligente-medico-pequeno-menina-foto.jpg' },
+    { title: 'História da TB', description: 'Aborda história da Tuberculose e agentes etiológicos', imageUrl: 'https://static.vecteezy.com/ti/fotos-gratis/p2/21486152-inteligente-medico-pequeno-menina-foto.jpg' },
+    { title: 'EPIDEMIOLOGIA, TRANSMISSAO E FORMAS CLINICAS DA TUBERCULOSE', description: 'Dive into pediatric care', imageUrl: 'https://static.vecteezy.com/ti/fotos-gratis/p2/21486152-inteligente-medico-pequeno-menina-foto.jpg' },
+    { title: 'DIAGNÓSTICO:PPD, BACILOSCOPIA, CULTURA, TRM', description: 'Dive into pediatric care', imageUrl: 'https://static.vecteezy.com/ti/fotos-gratis/p2/21486152-inteligente-medico-pequeno-menina-foto.jpg' },
+    { title: 'TERAPIA, MONITORAMENTO E CURA NA ILTB, TB-MDR, RR-TB', description: 'Dive into pediatric care', imageUrl: 'https://static.vecteezy.com/ti/fotos-gratis/p2/21486152-inteligente-medico-pequeno-menina-foto.jpg' },
+    { title: 'ADERENCIA , FALHA TERAPEUTICA E EFEITOS COLATERAIS', description: 'Dive into pediatric care', imageUrl: 'https://static.vecteezy.com/ti/fotos-gratis/p2/21486152-inteligente-medico-pequeno-menina-foto.jpg' },
+    { title: 'EDUCAÇÃO PERMANENTE E COMUNITÁRIA SOBRE TUBERCULOSE', description: 'Dive into pediatric care', imageUrl: 'https://static.vecteezy.com/ti/fotos-gratis/p2/21486152-inteligente-medico-pequeno-menina-foto.jpg' },
+    { title: 'CO-INFECÇÕES NA TUBERCULOSE', description: 'Dive into pediatric care', imageUrl: 'https://static.vecteezy.com/ti/fotos-gratis/p2/21486152-inteligente-medico-pequeno-menina-foto.jpg' },
+    { title: 'FINANCIAMENTO, ACESSO E POLITICAS PÚBLICAS', description: 'Dive into pediatric care', imageUrl: 'https://static.vecteezy.com/ti/fotos-gratis/p2/21486152-inteligente-medico-pequeno-menina-foto.jpg' },
+    { title: 'METODOLOGIA DA PESQUISA, METAS GLOBAIS', description: 'Dive into pediatric care', imageUrl: 'https://static.vecteezy.com/ti/fotos-gratis/p2/21486152-inteligente-medico-pequeno-menina-foto.jpg' },
+    { title: 'FLUXO E AMBIÊNCIA DA POLICLÍNICA CARSOSO FONTES', description: 'Dive into pediatric care', imageUrl: 'https://static.vecteezy.com/ti/fotos-gratis/p2/21486152-inteligente-medico-pequeno-menina-foto.jpg' },
+    { title: 'TECNOLOGIAS E ESTRATÉGIAS LOGÍSTICAS NAS IRAS COM FOCO NA TB', description: 'Dive into pediatric care', imageUrl: 'https://static.vecteezy.com/ti/fotos-gratis/p2/21486152-inteligente-medico-pequeno-menina-foto.jpg' },
   ];
 
   const scrollContainer = useRef(null);
   const categoriesScrollContainer = useRef(null);
 
-  const myCourses = [
-    { title: 'My Course 1', imageUrl: 'https://static.vecteezy.com/ti/fotos-gratis/p2/21486152-inteligente-medico-pequeno-menina-foto.jpg', progress: 50 },
-    { title: 'My Course 2', imageUrl: 'https://static.vecteezy.com/ti/fotos-gratis/p2/21486152-inteligente-medico-pequeno-menina-foto.jpg', progress: 75 },
+  //const myCourses = [
+   // { title: 'My Course 1', imageUrl: 'https://static.vecteezy.com/ti/fotos-gratis/p2/21486152-inteligente-medico-pequeno-menina-foto.jpg', progress: 50 },
+   // { title: 'My Course 2', imageUrl: 'https://static.vecteezy.com/ti/fotos-gratis/p2/21486152-inteligente-medico-pequeno-menina-foto.jpg', progress: 75 },
     // ... other my courses ...
-  ];
+ // ];
+  const myCourses = [
+    { title: 'My Course 1', imageUrl: require('../../imagens/kochpneu.png'), progress: 50 },
+    { title: 'My Course 2', imageUrl: require('../../imagens/kochpneu.png'), progress: 75 },
+    // ... other my courses ...
+];
 
+  
   const categories = [
     { categoryName: 'Category 1', backgroundColor: '#FF5733' },
     { categoryName: 'Category 2', backgroundColor: '#33D9FF' },
