@@ -3,7 +3,7 @@ import AnimatedCursor from 'react-animated-cursor';
 import NavigationBar from '../../componentes/NavigationBar';
 import './Video.css';
 import videoSrc from '../../imagens/pneumo.mp4';
-import videoSrc2 from '../../imagens/video_sangue.mp4';
+import videoSrc2 from '../../imagens/tuberculo.mp4';
 
 const Video = () => {
   const [videos, setVideos] = useState([
