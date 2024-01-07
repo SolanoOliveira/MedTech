@@ -1,6 +1,6 @@
 import React from 'react';
 import './FullScreenVideo.css'; // Certifique-se de criar este arquivo CSS
-import video from '../imagens/video_sangue.mp4'; // Certifique-se de que o caminho para o logo está correto
+import video from '../imagens/tuberculo.mp4'; // Certifique-se de que o caminho para o logo está correto
 
 const FullScreenVideo = () => {
   return (
