@@ -41,12 +41,24 @@
 
 .card-title {
   margin-bottom: 15px;
-  font-size: 1.25rem; /* Adjust the font size as needed */
+  font-size: 1rem; /* Você pode ajustar isso conforme necessário */
+  overflow: hidden; /* Mantém o texto dentro do container */
+  white-space: normal; /* Permite que o texto ocupe mais de uma linha */
+  word-wrap: break-word; /* Quebra palavras longas que não cabem na largura do card */
 }
 
 .card-text {
-  font-size: 1rem; /* Adjust the font size as needed */
-  color: #6c757d; /* This is a standard Bootstrap text-muted color */
+  font-size: 1rem; /* Ajuste conforme necessário */
+  color: #6c757d; /* Cor padrão do texto */
+  overflow: hidden; /* Mantém o texto dentro do container */
+  white-space: normal; /* Permite que o texto ocupe mais de uma linha */
+  word-wrap: break-word; /* Quebra palavras longas que não cabem na largura do card */
 }
 
+.course-card {
+  width: 20rem; /* Aumentado de 18rem para 20rem */
+  margin: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
 

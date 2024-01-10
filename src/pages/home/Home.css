@@ -145,3 +145,79 @@
         margin: 20px 0; /* Ajuste a margem vertical para espaçamento uniforme */
     }
 }
+
+
+.home-container {
+    height: 100vh; /* Alterado para "height: 100vh;" para ocupar a página inteira verticalmente */
+}
+
+.main-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 100%; Remova esta linha */
+}
+
+.titulo-principal {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-size: 3rem;
+    color: #17c3b2;
+}
+
+.main-content p {
+    font-family: 'Hind Siliguri', sans-serif;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.texto-titulo {
+    font-family: 'Hind Siliguri', sans-serif;
+}
+
+.image-container {
+    animation: float 3s ease-in-out infinite;
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+    background: transparent;
+    border-radius: 15px;
+    transition: opacity 0.5s ease-in-out;
+}
+
+/* Nova classe para as imagens dos médicos */
+.imagem-medico {
+    width: 450px; /* Defina o tamanho desejado aqui */
+    height: auto;
+}
+
+.fade-in {
+    opacity: 1;
+}
+
+.fade-out {
+    opacity: 0;
+}
+
+/* Estilo para dispositivos móveis */
+@media (max-width: 768px) {
+    .row.align-items-center {
+        flex-direction: column-reverse;
+    }
+
+    .col-md-6 {
+        margin-top: 20px;
+    }
+
+    .col-12.order-sm-12.text-center.text-md-left {
+        text-align: center;
+    }
+
+    .imagem-medico {
+        width: 100%; /* As imagens se ajustarão à largura do contêiner em telas menores */
+    }
+}

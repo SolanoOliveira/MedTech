@@ -8,50 +8,61 @@ import CategoryCard from '../../componentes/CategoryCard';
 import ProgressCourseCard from '../../componentes/ProgressCourseCard';
 import { useNavigate } from 'react-router-dom';
 
+import curso1 from '../../imagens/curso1.png';
+import curso2 from '../../imagens/curso2.png';
+import curso3 from '../../imagens/curso3.png';
+import curso4 from '../../imagens/curso4.png';
+import curso5 from '../../imagens/curso5.png';
+import curso6 from '../../imagens/curso6.png';
+import curso7 from '../../imagens/curso7.png';
+import curso8 from '../../imagens/curso8.png';
+import curso9 from '../../imagens/curso9.png';
+import curso10 from '../../imagens/curso10.png';
+
 const Catalogo = () => {
-  const courses = [
-    { title: 'Pediatric Fundamentals', description: 'Dive into pediatric care', imageUrl: 'https://static.vecteezy.com/ti/fotos-gratis/p2/21486152-inteligente-medico-pequeno-menina-foto.jpg' },
-    { title: 'Clinical Nutrition', description: 'Dive into pediatric care', imageUrl: 'https://static.vecteezy.com/ti/fotos-gratis/p2/21486152-inteligente-medico-pequeno-menina-foto.jpg' },
-    { title: 'Advanced Cardiology', description: 'Dive into pediatric care', imageUrl: 'https://static.vecteezy.com/ti/fotos-gratis/p2/21486152-inteligente-medico-pequeno-menina-foto.jpg' },
-    { title: 'Medical Technology', description: 'Dive into pediatric care', imageUrl: 'https://static.vecteezy.com/ti/fotos-gratis/p2/21486152-inteligente-medico-pequeno-menina-foto.jpg' },
-    { title: 'Medical Technology', description: 'Dive into pediatric care', imageUrl: 'https://static.vecteezy.com/ti/fotos-gratis/p2/21486152-inteligente-medico-pequeno-menina-foto.jpg' },
-    { title: 'Medical Technology', description: 'Dive into pediatric care', imageUrl: 'https://static.vecteezy.com/ti/fotos-gratis/p2/21486152-inteligente-medico-pequeno-menina-foto.jpg' },
-    { title: 'Medical Technology', description: 'Dive into pediatric care', imageUrl: 'https://static.vecteezy.com/ti/fotos-gratis/p2/21486152-inteligente-medico-pequeno-menina-foto.jpg' },
-    { title: 'Medical Technology', description: 'Dive into pediatric care', imageUrl: 'https://static.vecteezy.com/ti/fotos-gratis/p2/21486152-inteligente-medico-pequeno-menina-foto.jpg' },
-    { title: 'Medical Technology', description: 'Dive into pediatric care', imageUrl: 'https://static.vecteezy.com/ti/fotos-gratis/p2/21486152-inteligente-medico-pequeno-menina-foto.jpg' },
-    { title: 'Medical Technology', description: 'Dive into pediatric care', imageUrl: 'https://static.vecteezy.com/ti/fotos-gratis/p2/21486152-inteligente-medico-pequeno-menina-foto.jpg' },
-    { title: 'Medical Technology', description: 'Dive into pediatric care', imageUrl: 'https://static.vecteezy.com/ti/fotos-gratis/p2/21486152-inteligente-medico-pequeno-menina-foto.jpg' },
-  ];
+  const courses= [
+    { title: 'Epidemiologia, Transmissão e Formas Clínicas da Tuberculose', description: 'Entenda a epidemiologia, transmissão e formas clínicas da tuberculose.', imageUrl: curso1 },
+    { title: 'Diagnóstico: PPD, Baciloscopia, Cultura, TRM', description: 'Aprofunde-se nos métodos de diagnóstico da tuberculose.', imageUrl: curso2 },
+    { title: 'Terapia, Monitoramento e Cura na ILTB, TB-MDR, RR-TB', description: 'Explore terapias e monitoramento para diferentes tipos de tuberculose.', imageUrl: curso3 },
+    { title: 'Aderência, Falha Terapêutica e Efeitos Colaterais', description: 'Aprenda sobre aderência ao tratamento, falhas terapêuticas e efeitos colaterais.', imageUrl: curso4 },
+    { title: 'Educação Permanente e Comunitária sobre Tuberculose', description: 'Conheça estratégias para educação permanente e comunitária em tuberculose.', imageUrl: curso5 },
+    { title: 'Co-infecções na Tuberculose', description: 'Descubra os desafios e soluções para co-infecções na tuberculose.', imageUrl: curso6 },
+    { title: 'Financiamento, Acesso e Políticas Públicas', description: 'Entenda sobre financiamento, acesso e políticas públicas em saúde.', imageUrl: curso7 },
+    { title: 'Metodologia da Pesquisa, Metas Globais', description: 'Aprofunde-se em metodologias de pesquisa e metas globais de saúde.', imageUrl: curso8 },
+    { title: 'Fluxo e Ambiência da Policlínica Carlos Fontes', description: 'Explore o funcionamento e ambiente da Policlínica Carlos Fontes.', imageUrl: curso9 },
+    { title: 'Tecnologias e Estratégias Logísticas nas IRAS com foco na TB', description: 'Descubra tecnologias e estratégias logísticas nas IRAS focadas em tuberculose.', imageUrl: curso10 }
+];
+
 
   const scrollContainer = useRef(null);
   const categoriesScrollContainer = useRef(null);
 
   const myCourses = [
-    { title: 'My Course 1', imageUrl: 'https://static.vecteezy.com/ti/fotos-gratis/p2/21486152-inteligente-medico-pequeno-menina-foto.jpg', progress: 50 },
-    { title: 'My Course 2', imageUrl: 'https://static.vecteezy.com/ti/fotos-gratis/p2/21486152-inteligente-medico-pequeno-menina-foto.jpg', progress: 75 },
-    // ... other my courses ...
+    { 
+      title: 'Epidemiologia, Transmissão e Formas Clínicas da Tuberculose', 
+      imageUrl: curso1, 
+      progress: 50 // Exemplo de progresso
+    },
+    { 
+      title: 'Diagnóstico: PPD, Baciloscopia, Cultura, TRM', 
+      imageUrl: curso2, 
+      progress: 30 // Exemplo de progresso
+    }
   ];
 
   const categories = [
-    { categoryName: 'Category 1', backgroundColor: '#FF5733' },
-    { categoryName: 'Category 2', backgroundColor: '#33D9FF' },
-    { categoryName: 'Category 2', backgroundColor: '#33D9FF' },
-    { categoryName: 'Category 2', backgroundColor: '#33D9FF' },
-    { categoryName: 'Category 2', backgroundColor: '#33D9FF' },
-    { categoryName: 'Category 2', backgroundColor: '#33D9FF' },
-    { categoryName: 'Category 2', backgroundColor: '#33D9FF' },
-    { categoryName: 'Category 2', backgroundColor: '#33D9FF' },
-    { categoryName: 'Category 2', backgroundColor: '#33D9FF' },
-    { categoryName: 'Category 2', backgroundColor: '#33D9FF' },
-    { categoryName: 'Category 2', backgroundColor: '#33D9FF' },
-    { categoryName: 'Category 2', backgroundColor: '#33D9FF' },
-    { categoryName: 'Category 2', backgroundColor: '#33D9FF' },
-    { categoryName: 'Category 2', backgroundColor: '#33D9FF' },
-    { categoryName: 'Category 2', backgroundColor: '#33D9FF' },
-    { categoryName: 'Category 2', backgroundColor: '#33D9FF' },
-    { categoryName: 'Category 2', backgroundColor: '#33D9FF' },
-   
+    { categoryName: 'Epidemiologia', backgroundColor: '#FF5733' },
+    { categoryName: 'Diagnóstico', backgroundColor: '#33D9FF' },
+    { categoryName: 'Terapia e Cura', backgroundColor: '#8E44AD' },
+    { categoryName: 'Educação em Saúde', backgroundColor: '#2ECC71' },
+    { categoryName: 'Políticas Públicas', backgroundColor: '#F1C40F' },
+    { categoryName: 'Metodologia', backgroundColor: '#3498DB' },
+    { categoryName: 'Tecnologia Médica', backgroundColor: '#E74C3C' },
+    { categoryName: 'Atenção Primária', backgroundColor: '#16A085' },
+    { categoryName: 'Saúde Comunitária', backgroundColor: '#D35400' },
+    { categoryName: 'Saúde Global', backgroundColor: '#7F8C8D' },
   ];
+  
 
   const scroll = (scrollOffset) => {
     if (scrollContainer.current) {
