@@ -87,7 +87,7 @@ const Home = () => {
                 <div className="main-content container mt-4">
                     <div className="row align-items-center" style={{ minHeight: '70vh' }}>
                         <div className="col-md-12 text-center">
-                            <h2 className="secao-titulo">O PNEUMOD'lair@am tem:</h2>
+                            <h2 className="secao-titulo">O PNEUMO'dlair@m tem:</h2>
                             <div className="icones-container d-flex justify-content-center">
                                 <div className="icone text-center">
                                     <img src={icone} alt="Ícone" className="img-fluid" />
