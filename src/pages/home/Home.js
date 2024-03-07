@@ -65,9 +65,10 @@ const Home = () => {
             <div className="main-content container mt-4">
                 <div className="row align-items-center" style={{ minHeight: '70vh' }}>
                     <div className="col-md-6 order-md-1" style={{ paddingRight: '2rem' }}>
-                        <h1 className="titulo-principal">Já pensou em se especializar na pneumologia?</h1>
+                        <h1 className="titulo-principal">Especialize-se em pneumologia - Saiba como identificar doenças respiratórias</h1>
                         <p className="texto-titulo">
-                        Interessado em se especializar na pneumologia? Explore o diagnóstico e tratamento de doenças respiratórias com nossos cursos detalhados. Aprenda com especialistas, aproveite recursos interativos e atualize-se com as mais recentes pesquisas. Nossa plataforma é o passo ideal para profissionais de saúde que visam excelência em pneumologia. Venha transformar vidas com habilidades essenciais!
+                        Interessados em aprender as doenças infecciosas do pulmão, em especial a tuberculose, acesse nossos conteúdos através da plataforma digital PNEUMOdigital@.
+                        O espaço virtual é inovador, intuitivo e ideal para os profissionais de saúde e sociedade civil.
                         </p>
                         <div className="text-center text-md-left">
                             <button onClick={goToLogin} style={{ backgroundColor: '#17c3b2', color: 'white', padding: '10px 20px', border: 'none', borderRadius: '5px', cursor: 'pointer' }}>

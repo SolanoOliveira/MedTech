@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import AnimatedCursor from 'react-animated-cursor';
 import NavigationBar from '../../componentes/NavigationBar';
 import './Video.css';
@@ -27,6 +27,7 @@ const Video = () => {
       duration: '15:20',
       progress: Math.floor(Math.random() * 100),
     },
+    // Adicione mais vídeos conforme necessário
     {
       id: 3,
       title: 'Pneumonia: Tratamento e Cuidados',
@@ -67,10 +68,20 @@ const Video = () => {
       duration: '20:10',
       progress: Math.floor(Math.random() * 100),
     }
-    // ...outros vídeos...
   ]);
 
   const [mainVideo, setMainVideo] = useState(videos[0]);
+  const [totalProgress, setTotalProgress] = useState(0);
+
+  useEffect(() => {
+    const calculateTotalProgress = () => {
+      const total = videos.reduce((acc, curr) => acc + curr.progress, 0);
+      const averageProgress = total / videos.length;
+      setTotalProgress(averageProgress);
+    };
+
+    calculateTotalProgress();
+  }, [videos]);
 
   const handleVideoChange = (video) => {
     setMainVideo(video);
@@ -143,6 +154,10 @@ const Video = () => {
             </div>
           ))}
         </div>
+      </div>
+      <div className="course-progress">
+        <progress value={totalProgress} max="100" style={{ width: "100%" }}></progress>
+        <span>{totalProgress.toFixed(2)}% completo</span>
       </div>
     </div>
   );
